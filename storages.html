@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <!-- //generally before html5 cookies are used but it 4kb only
+        but in htmls 5mb can be stored 
+        
+        in this example using javascript object it shows object in local storage after inspecting
+         after converting strings in local storage
+        we can able to see stringyfy
+        goto inspect->application-storages-->
+    </head>
+    <body>
+        <h1>local storages</h1>
+        <script>
+            var carName="bmw";
+            localStorage.setItem('carName',carName);
+            localStorage.getItem('carName',carName);
+
+            localStorage.userName="thar";
+            var fetchedname=localStorage.getItem('userName');
+            //alert(fetchedname);
+            //alert(localStorage.length)
+            //localStorage.removeItem('carName');
+             
+             // localStorage.clear();
+
+             var mobile={};
+             mobile.name='samsung';
+             mobile.ram='4gb';
+             mobile.rom='128gb';
+             localStorage.setItem('mobile',JSON.stringify(mobile));
+
+
+            
+             sessionStorage.setItem('emp',emp);
+              var emp='rajesh';s
+            sessionStorage.setItem('emp','vinay');
+
+        </script>
+    </body>
+</html>
